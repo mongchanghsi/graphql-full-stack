@@ -8,6 +8,7 @@ import {
   ApolloProvider,
   HttpLink,
   from,
+  ApolloLink,
 } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
 
@@ -19,14 +20,22 @@ const errorLink = onError(({ graphQLErrors, networkError }) => {
   }
 });
 
-const link = from([
+const localhostLink = from([
   errorLink,
   new HttpLink({ uri: "http://localhost:8080/graphql" }),
 ]);
 
+const aaveLink = new HttpLink({
+  uri: "https://api.thegraph.com/subgraphs/name/aave/aave-v2-polygon-mumbai",
+});
+
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  link: link,
+  link: ApolloLink.split(
+    (operation) => operation.getContext().clientName === "aave",
+    aaveLink,
+    localhostLink
+  ),
 });
 
 function MyApp({ Component, pageProps }: AppProps) {

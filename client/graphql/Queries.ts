@@ -10,3 +10,23 @@ export const GET_ALL_USERS = gql`
     }
   }
 `;
+
+export const GET_APY_AAVE = gql`
+  {
+    reserves {
+      name
+      underlyingAsset
+
+      liquidityRate
+      stableBorrowRate
+      variableBorrowRate
+
+      aEmissionPerSecond
+      vEmissionPerSecond
+      sEmissionPerSecond
+
+      totalATokenSupply
+      totalCurrentVariableDebt
+    }
+  }
+`;

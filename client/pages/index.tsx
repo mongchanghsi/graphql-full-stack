@@ -6,6 +6,7 @@ import styles from "../styles/Main.module.scss";
 import Navigation from "../components/Navigation";
 import DisplayUsers from "../components/DisplayUsers";
 import CreateUser from "../components/CreateUser";
+import DisplayAPY from "../components/DisplayAPY";
 
 const Index: NextPage = () => {
   return (
@@ -14,7 +15,8 @@ const Index: NextPage = () => {
       <Navigation />
       <div className={styles.main}>
         {/* <DisplayUsers /> */}
-        <CreateUser />
+        {/* <CreateUser /> */}
+        <DisplayAPY />
       </div>
     </div>
   );
