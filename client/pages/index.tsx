@@ -7,6 +7,7 @@ import Navigation from "../components/Navigation";
 import DisplayUsers from "../components/DisplayUsers";
 import CreateUser from "../components/CreateUser";
 import DisplayAPY from "../components/DisplayAPY";
+import DisplayCountries from "../components/DisplayCountries";
 
 const Index: NextPage = () => {
   return (
@@ -16,7 +17,8 @@ const Index: NextPage = () => {
       <div className={styles.main}>
         {/* <DisplayUsers /> */}
         {/* <CreateUser /> */}
-        <DisplayAPY />
+        {/* <DisplayAPY /> */}
+        <DisplayCountries />
       </div>
     </div>
   );

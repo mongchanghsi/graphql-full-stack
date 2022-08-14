@@ -29,13 +29,23 @@ const aaveLink = new HttpLink({
   uri: "https://api.thegraph.com/subgraphs/name/aave/aave-v2-polygon-mumbai",
 });
 
+const countriesLink = new HttpLink({
+  uri: "https://countries.trevorblades.com/",
+});
+
+// const client = new ApolloClient({
+//   cache: new InMemoryCache(),
+//   link: ApolloLink.split(
+//     (operation) => operation.getContext().clientName === "aave",
+//     aaveLink,
+//     countriesLink
+//     // localhostLink
+//   ),
+// });
+
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  link: ApolloLink.split(
-    (operation) => operation.getContext().clientName === "aave",
-    aaveLink,
-    localhostLink
-  ),
+  link: countriesLink,
 });
 
 function MyApp({ Component, pageProps }: AppProps) {

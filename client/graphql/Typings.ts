@@ -27,3 +27,8 @@ export interface IToken {
 export interface ITokenAPY extends IToken {
   apy: number;
 }
+
+export interface ICountry {
+  __typename: string;
+  name: string;
+}

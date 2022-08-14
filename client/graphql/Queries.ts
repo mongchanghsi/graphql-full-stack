@@ -30,3 +30,11 @@ export const GET_APY_AAVE = gql`
     }
   }
 `;
+
+export const GET_COUNTRIES = gql`
+  query {
+    countries {
+      name
+    }
+  }
+`;
