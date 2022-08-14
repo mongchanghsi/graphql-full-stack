@@ -5,7 +5,9 @@ import { ICountry } from "../../graphql/Typings";
 import styles from "./index.module.scss";
 
 const DisplayCountries = () => {
-  const { error, loading, data } = useQuery(GET_COUNTRIES);
+  const { error, loading, data } = useQuery(GET_COUNTRIES, {
+    context: { clientName: "countries" },
+  });
   const [countries, setCountries] = useState<ICountry[]>([]);
 
   useEffect(() => {

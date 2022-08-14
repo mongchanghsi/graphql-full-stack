@@ -33,19 +33,23 @@ const countriesLink = new HttpLink({
   uri: "https://countries.trevorblades.com/",
 });
 
-// const client = new ApolloClient({
-//   cache: new InMemoryCache(),
-//   link: ApolloLink.split(
-//     (operation) => operation.getContext().clientName === "aave",
-//     aaveLink,
-//     countriesLink
-//     // localhostLink
-//   ),
-// });
-
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  link: countriesLink,
+  link: ApolloLink.split(
+    (operation) => operation.getContext().clientName === "aave",
+    aaveLink,
+
+    ApolloLink.split(
+      (operation) => operation.getContext().clientName === "countries",
+      countriesLink,
+
+      ApolloLink.split(
+        (operation) => operation.getContext().clientName === "localhost",
+        localhostLink
+      )
+    )
+  ),
+  resolvers: {},
 });
 
 function MyApp({ Component, pageProps }: AppProps) {

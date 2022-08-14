@@ -6,7 +6,9 @@ import { MoonLoader } from "react-spinners";
 import { IUser } from "../../graphql/Typings";
 
 const DisplayUsers = () => {
-  const { error, loading, data } = useQuery(GET_ALL_USERS);
+  const { error, loading, data } = useQuery(GET_ALL_USERS, {
+    context: { clientName: "localhost" },
+  });
   const [users, setUsers] = useState<IUser[]>([]);
 
   useEffect(() => {
