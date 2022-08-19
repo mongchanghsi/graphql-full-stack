@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Spiderman",
     "duration": 120,
+    "type": "ACTION",
     "characters": [
       {
         "id": 1,
@@ -44,12 +45,14 @@
         "gender": "Female",
         "ipAddress": "159.85.178.8"
       }
-    ]
+    ],
+    "similar": [2, 3]
   },
   {
     "id": 2,
     "name": "Thor - Love and Thunder",
     "duration": 200,
+    "type": "ROMANCE",
     "characters": [
       {
         "id": 1,
@@ -83,12 +86,14 @@
         "gender": "Female",
         "ipAddress": "17.121.193.127"
       }
-    ]
+    ],
+    "similar": []
   },
   {
     "id": 3,
     "name": "The Avengers - Infinity Wars",
     "duration": 210,
+    "type": "ACTION",
     "characters": [
       {
         "id": 3,
@@ -106,6 +111,7 @@
         "gender": "Female",
         "ipAddress": "17.121.193.127"
       }
-    ]
+    ],
+    "similar": [1]
   }
 ]

@@ -40,14 +40,37 @@ const RootQuery = new GraphQLObjectType({
       type: new GraphQLList(MovieType),
       args: {},
       resolve(parent, args) {
-        return MockMovieData;
+        // Need to see whether is there a better way to deal with this
+        let output: any[] = [];
+        MockMovieData.forEach((movie) => {
+          const similarMoviesId = movie.similar;
+          const similarMoviesList: any[] = [];
+          similarMoviesId.forEach((id) =>
+            similarMoviesList.push(MockMovieData.filter((x) => x.id === id)[0])
+          );
+          output.push({
+            ...movie,
+            similar: similarMoviesList,
+          });
+        });
+
+        return output;
       },
     },
     getMovieById: {
       type: MovieType,
       args: { id: { type: GraphQLInt } },
       resolve(parent, args) {
-        return MockMovieData.filter((movie) => movie.id === args.id)[0];
+        // Need to see whether is there a better way to deal with this
+        const filteredMovie = MockMovieData.filter(
+          (movie) => movie.id === args.id
+        )[0];
+        const similarMoviesId = filteredMovie.similar;
+        const similarMoviesList: any[] = [];
+        similarMoviesId.forEach((id: number) =>
+          similarMoviesList.push(MockMovieData.filter((x) => x.id === id)[0])
+        );
+        return { ...filteredMovie, similar: similarMoviesList };
       },
     },
   },
