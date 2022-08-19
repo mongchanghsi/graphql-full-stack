@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "name": "Spiderman",
+    "duration": 120,
+    "characters": [
+      {
+        "id": 1,
+        "firstName": "Kellby",
+        "lastName": "MacAlpin",
+        "email": "kmacalpin0@bloomberg.com",
+        "gender": "Male",
+        "ipAddress": "150.198.155.231"
+      },
+      {
+        "id": 2,
+        "firstName": "Donnamarie",
+        "lastName": "Kennelly",
+        "email": "dkennelly1@abc.net.au",
+        "gender": "Female",
+        "ipAddress": "40.184.95.169"
+      },
+      {
+        "id": 3,
+        "firstName": "Hamnet",
+        "lastName": "Fleeming",
+        "email": "hfleeming2@uiuc.edu",
+        "gender": "Male",
+        "ipAddress": "155.229.226.134"
+      },
+      {
+        "id": 4,
+        "firstName": "Dell",
+        "lastName": "Schusterl",
+        "email": "dschusterl3@reddit.com",
+        "gender": "Female",
+        "ipAddress": "17.121.193.127"
+      },
+      {
+        "id": 5,
+        "firstName": "Wynne",
+        "lastName": "McMurray",
+        "email": "wmcmurray4@tripod.com",
+        "gender": "Female",
+        "ipAddress": "159.85.178.8"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Thor - Love and Thunder",
+    "duration": 200,
+    "characters": [
+      {
+        "id": 1,
+        "firstName": "Kellby",
+        "lastName": "MacAlpin",
+        "email": "kmacalpin0@bloomberg.com",
+        "gender": "Male",
+        "ipAddress": "150.198.155.231"
+      },
+      {
+        "id": 2,
+        "firstName": "Donnamarie",
+        "lastName": "Kennelly",
+        "email": "dkennelly1@abc.net.au",
+        "gender": "Female",
+        "ipAddress": "40.184.95.169"
+      },
+      {
+        "id": 3,
+        "firstName": "Hamnet",
+        "lastName": "Fleeming",
+        "email": "hfleeming2@uiuc.edu",
+        "gender": "Male",
+        "ipAddress": "155.229.226.134"
+      },
+      {
+        "id": 4,
+        "firstName": "Dell",
+        "lastName": "Schusterl",
+        "email": "dschusterl3@reddit.com",
+        "gender": "Female",
+        "ipAddress": "17.121.193.127"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "The Avengers - Infinity Wars",
+    "duration": 210,
+    "characters": [
+      {
+        "id": 3,
+        "firstName": "Hamnet",
+        "lastName": "Fleeming",
+        "email": "hfleeming2@uiuc.edu",
+        "gender": "Male",
+        "ipAddress": "155.229.226.134"
+      },
+      {
+        "id": 4,
+        "firstName": "Dell",
+        "lastName": "Schusterl",
+        "email": "dschusterl3@reddit.com",
+        "gender": "Female",
+        "ipAddress": "17.121.193.127"
+      }
+    ]
+  }
+]

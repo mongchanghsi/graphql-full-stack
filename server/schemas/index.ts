@@ -7,6 +7,8 @@ import {
 } from "graphql";
 import UserType from "./TypeDefs/UserType";
 import MockUserData from "../MOCK_DATA.json";
+import MockMovieData from "../MOCK_MOVIE_DATA.json";
+import MovieType from "./TypeDefs/MovieType";
 
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
@@ -32,6 +34,20 @@ const RootQuery = new GraphQLObjectType({
         return MockUserData.filter(
           (user) => user.firstName === args.firstName
         )[0];
+      },
+    },
+    getAllMovies: {
+      type: new GraphQLList(MovieType),
+      args: {},
+      resolve(parent, args) {
+        return MockMovieData;
+      },
+    },
+    getMovieById: {
+      type: MovieType,
+      args: { id: { type: GraphQLInt } },
+      resolve(parent, args) {
+        return MockMovieData.filter((movie) => movie.id === args.id)[0];
       },
     },
   },
