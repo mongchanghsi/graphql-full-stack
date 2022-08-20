@@ -10,7 +10,7 @@
         "firstName": "Kellby",
         "lastName": "MacAlpin",
         "email": "kmacalpin0@bloomberg.com",
-        "gender": "Male",
+        "gender": "MALE",
         "ipAddress": "150.198.155.231"
       },
       {
@@ -18,7 +18,7 @@
         "firstName": "Donnamarie",
         "lastName": "Kennelly",
         "email": "dkennelly1@abc.net.au",
-        "gender": "Female",
+        "gender": "FEMALE",
         "ipAddress": "40.184.95.169"
       },
       {
@@ -26,7 +26,7 @@
         "firstName": "Hamnet",
         "lastName": "Fleeming",
         "email": "hfleeming2@uiuc.edu",
-        "gender": "Male",
+        "gender": "MALE",
         "ipAddress": "155.229.226.134"
       },
       {
@@ -34,7 +34,7 @@
         "firstName": "Dell",
         "lastName": "Schusterl",
         "email": "dschusterl3@reddit.com",
-        "gender": "Female",
+        "gender": "FEMALE",
         "ipAddress": "17.121.193.127"
       },
       {
@@ -42,7 +42,7 @@
         "firstName": "Wynne",
         "lastName": "McMurray",
         "email": "wmcmurray4@tripod.com",
-        "gender": "Female",
+        "gender": "FEMALE",
         "ipAddress": "159.85.178.8"
       }
     ],
@@ -59,7 +59,7 @@
         "firstName": "Kellby",
         "lastName": "MacAlpin",
         "email": "kmacalpin0@bloomberg.com",
-        "gender": "Male",
+        "gender": "MALE",
         "ipAddress": "150.198.155.231"
       },
       {
@@ -67,7 +67,7 @@
         "firstName": "Donnamarie",
         "lastName": "Kennelly",
         "email": "dkennelly1@abc.net.au",
-        "gender": "Female",
+        "gender": "FEMALE",
         "ipAddress": "40.184.95.169"
       },
       {
@@ -75,7 +75,7 @@
         "firstName": "Hamnet",
         "lastName": "Fleeming",
         "email": "hfleeming2@uiuc.edu",
-        "gender": "Male",
+        "gender": "MALE",
         "ipAddress": "155.229.226.134"
       },
       {
@@ -83,7 +83,7 @@
         "firstName": "Dell",
         "lastName": "Schusterl",
         "email": "dschusterl3@reddit.com",
-        "gender": "Female",
+        "gender": "FEMALE",
         "ipAddress": "17.121.193.127"
       }
     ],
@@ -100,7 +100,7 @@
         "firstName": "Hamnet",
         "lastName": "Fleeming",
         "email": "hfleeming2@uiuc.edu",
-        "gender": "Male",
+        "gender": "MALE",
         "ipAddress": "155.229.226.134"
       },
       {
@@ -108,7 +108,7 @@
         "firstName": "Dell",
         "lastName": "Schusterl",
         "email": "dschusterl3@reddit.com",
-        "gender": "Female",
+        "gender": "FEMALE",
         "ipAddress": "17.121.193.127"
       }
     ],
